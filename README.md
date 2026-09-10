@@ -51,19 +51,19 @@ LAB ARCHITECTURE
 
  Lab Configuration
  
-🧩 Component	⚙️ Configuration
-🖥️ Host OS	Windows 10
-🧠 Host RAM	8 GB
-⚡ Processor	Intel Core i7
-🧰 Hypervisor	VirtualBox 7.2
-🐉 Security OS	Kali Linux 2026.2
-🧠 Kali RAM	2048 MB
-🌐 Virtual Network	NAT Network
-📡 Network Address	10.0.0.0/24
-🐧 Kali IP Address	10.0.0.2/24
-🚪 Default Gateway	10.0.0.1
-🌍 DNS Server	8.8.8.8
-🔮 Future VM Range	10.0.0.3–10.0.0.99
+🧩 Component	⚙️     Configuration
+🖥️ Host OS          	Windows 10
+🧠 Host RAM         	8 GB
+⚡ Processor        	Intel Core i7
+🧰 Hypervisor	       VirtualBox 7.2
+🐉 Security OS      	Kali Linux 2026.2
+🧠 Kali RAM	         2048 MB
+🌐 Virtual Network  	NAT Network
+📡 Network Address  	10.0.0.0/24
+🐧 Kali IP Address  	10.0.0.2/24
+🚪 Default Gateway  	10.0.0.1
+🌍 DNS Server	       8.8.8.8
+🔮 Future VM Range  	10.0.0.3–10.0.0.99
 
 🪜 Lab Setup Procedure
 
@@ -104,12 +104,12 @@ RAM: 2048 MB
 Step 5. Configure the Kali Linux Network
 The Kali Linux network configuration was checked and configured with a consistent IPv4 address.
 
-Example configuration:
+configuration:
 
-IP Address: 10.0.0.2
-Subnet Mask: 255.255.255.0
-Gateway: 10.0.0.1
-DNS: 8.8.8.8
+IP Address:   10.0.0.2
+Subnet Mask:  255.255.255.0
+Gateway:      10.0.0.1
+DNS:          8.8.8.8
 A consistent IP address makes it easier to document the lab and reference the Kali machine in future exercises.
 
 <img width="360" height="279" alt="Screenshot 2026-09-10 002805" src="https://github.com/user-attachments/assets/33a20294-df4f-4ef6-9c6d-762b3a2e8068" />
@@ -125,14 +125,16 @@ The snapshot represents the clean baseline of the laboratory.
 If a future exercise changes or damages the VM configuration, the machine can be restored to this baseline.
 
 🔎 Lab Verification
-✅ Test	🧾 Command	🎯 Expected Result
-🌐 Check IP address	ip a	Correct Kali IP displayed
-📡 Test gateway	ping 10.0.0.1	Successful replies
-🌍 Test Internet connectivity	ping 8.8.8.8	Successful replies
-🔎 Test DNS resolution	nslookup networkwalks.com	Domain resolves
-🧰 Verify Nmap	nmap --version	Nmap version displayed
-🔄 Verify snapshot	Restore snapshot and run ip a	Baseline configuration restored
-Example Results
+
+✅ Test	                        🧾 Command	🎯                        Expected Result
+🌐 Check IP address               	ip a	                              Correct Kali IP displayed
+📡 Test gateway                   	ping 10.0.0.1	                     Successful replies
+🌍 Test Internet connectivity     	ping 8.8.8.8                      	Successful replies
+🔎 Test DNS resolution            	nslookup networkwalks.com	         Domain resolves
+🧰 Verify Nmap	nmap                --version	Nmap                     version displayed
+🔄 Verify snapshot                	Restore snapshot and run ip a	     Baseline configuration restored
+
+
 IP Address:
 10.0.0.2/24
 
@@ -141,17 +143,20 @@ Gateway:
 
 DNS:
 8.8.8.8
+
 🐞 Problems Encountered & Solutions
 
 Problem 1. kali Linux Incomplete Download
 During Kali Linux Download, the zip file keeps getting stuck indicating 0 B/s - 3.7 GB of 3.7GB but showing incomplete download in the folder. I deleted my old version of Kali Linux in the system thinking that was the cause but the problem persisted.
 
-Solution: I cleared every previous downloads, restarted the system and started a new download. When it got to the 100MB left to download, i simply paused the download, started, paused again until the download reach the finish notification.
+Solution:
+I cleared every previous downloads, restarted the system and started a new download. When it got to the 100MB left to download, i simply paused the download, started, paused again until the download reach the finish notification.
 
 Problem 2. Internet Connectivity After Static IP Configuration
 After manually configuring the IPv4 settings, i tried testing the internet connection by searching google.com webpage, Google page opened and displayed, i went ahead to search for network walks on the search bar but the connection was lost.
 
-Solution: I typed the command in the terminal;
+Solution:
+I typed the command in the terminal;
 
 sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
 
@@ -163,6 +168,7 @@ Through this project, I learned how to create and configure a virtual environmen
 The most important concepts I learned include:
 
 1. NAT vs NAT Network
+2. 
 A standard NAT configuration and a NAT Network serve different purposes.
 
 A NAT Network allows multiple VMs connected to the same virtual network to communicate with one another while providing network address translation for external connectivity.
@@ -170,15 +176,17 @@ A NAT Network allows multiple VMs connected to the same virtual network to commu
 This makes it useful for building a multi-machine cybersecurity laboratory.
 
 2. Virtual Machine Networking
+3. 
 I learned how VirtualBox virtual network adapters connect virtual machines to different types of networks and how network configuration affects communication between machines.
 
-3. Static IP Configuration
+4. Static IP Configuration
+5. 
 I learned how to configure and verify IPv4 addressing, subnet masks, gateways, and DNS settings in Kali Linux.
 
-4. VM Snapshots
+6. VM Snapshots
 I learned that a clean snapshot should be created before performing risky or experimental activities.
 
-5. Documentation
+7. Documentation
    
 I learned that documenting commands, configuration, screenshots, problems, and solutions is an important part of a professional cybersecurity project.
 
@@ -196,6 +204,7 @@ Kali Linux: https://kali.org/get-kali
 
 👤 Author
 Idongesit Nkanga
+
 Cybersecurity Intern B083
 
 LinkedIn: https://www.linkedin.com/in/idongesit-george-7b0125a8 
