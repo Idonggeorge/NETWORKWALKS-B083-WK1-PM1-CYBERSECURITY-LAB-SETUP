@@ -50,20 +50,8 @@ LAB ARCHITECTURE
 <img width="666" height="316" alt="Screenshot 2026-09-10 215145" src="https://github.com/user-attachments/assets/45454020-2998-4ebb-ae45-73eb1bcefcb8" />
 
  Lab Configuration
- 
-🧩 Component	⚙️     Configuration
-🖥️ Host OS          	Windows 10
-🧠 Host RAM         	8 GB
-⚡ Processor        	Intel Core i7
-🧰 Hypervisor	       VirtualBox 7.2
-🐉 Security OS      	Kali Linux 2026.2
-🧠 Kali RAM	         2048 MB
-🌐 Virtual Network  	NAT Network
-📡 Network Address  	10.0.0.0/24
-🐧 Kali IP Address  	10.0.0.2/24
-🚪 Default Gateway  	10.0.0.1
-🌍 DNS Server	       8.8.8.8
-🔮 Future VM Range  	10.0.0.3–10.0.0.99
+
+ <img width="250" height="358" alt="Screenshot 2026-09-10 230850" src="https://github.com/user-attachments/assets/246f6db7-9e66-4718-aca4-45e32c1d1c66" />
 
 🪜 Lab Setup Procedure
 
@@ -126,14 +114,7 @@ If a future exercise changes or damages the VM configuration, the machine can be
 
 🔎 Lab Verification
 
-✅ Test	                        🧾 Command	🎯                        Expected Result
-🌐 Check IP address               	ip a	                              Correct Kali IP displayed
-📡 Test gateway                   	ping 10.0.0.1	                     Successful replies
-🌍 Test Internet connectivity     	ping 8.8.8.8                      	Successful replies
-🔎 Test DNS resolution            	nslookup networkwalks.com	         Domain resolves
-🧰 Verify Nmap	nmap                --version	Nmap                     version displayed
-🔄 Verify snapshot                	Restore snapshot and run ip a	     Baseline configuration restored
-
+<img width="548" height="194" alt="Screenshot 2026-09-10 230813" src="https://github.com/user-attachments/assets/d5dc5474-62db-45fe-878e-09b1f10e54a3" />
 
 IP Address:
 10.0.0.2/24
