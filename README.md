@@ -53,6 +53,7 @@ LAB ARCHITECTURE
 
  <img width="250" height="358" alt="Screenshot 2026-09-10 230850" src="https://github.com/user-attachments/assets/246f6db7-9e66-4718-aca4-45e32c1d1c66" />
 
+
 🪜 Lab Setup Procedure
 
 Step 1. Install 7-Zip
